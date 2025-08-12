@@ -163,17 +163,22 @@ static const struct string_keyword opt_string_keyword[] = {
 	{ "baseboard-manufacturer", 2, 0x04 },
 	{ "baseboard-product-name", 2, 0x05 },
 	{ "baseboard-version", 2, 0x06 },
-	{ "baseboard-serial-number", 2, 0x07 },
-	{ "baseboard-asset-tag", 2, 0x08 },
-	{ "chassis-manufacturer", 3, 0x04 },
+        { "baseboard-serial-number", 2, 0x07 },
+        { "baseboard-asset-tag", 2, 0x08 },
+        { "baseboard-location-in-chassis", 2, 0x0A },
+        { "chassis-manufacturer", 3, 0x04 },
 	{ "chassis-type", 3, 0x05 },            /* dmi_chassis_type() */
-	{ "chassis-version", 3, 0x06 },
-	{ "chassis-serial-number", 3, 0x07 },
-	{ "chassis-asset-tag", 3, 0x08 },
-	{ "processor-family", 4, 0x06 },        /* dmi_processor_family() */
-	{ "processor-manufacturer", 4, 0x07 },
-	{ "processor-version", 4, 0x10 },
-	{ "processor-frequency", 4, 0x16 },     /* dmi_processor_frequency() */
+        { "chassis-version", 3, 0x06 },
+        { "chassis-serial-number", 3, 0x07 },
+        { "chassis-asset-tag", 3, 0x08 },
+        { "chassis-sku-number", 3, 0x23 },
+        { "processor-family", 4, 0x06 },        /* dmi_processor_family() */
+        { "processor-manufacturer", 4, 0x07 },
+        { "processor-version", 4, 0x10 },
+        { "processor-serial-number", 4, 0x20 },
+        { "processor-asset-tag", 4, 0x21 },
+        { "processor-part-number", 4, 0x22 },
+        { "processor-frequency", 4, 0x16 },     /* dmi_processor_frequency() */
 };
 
 /* This is a template, 3rd field is set at runtime. */
